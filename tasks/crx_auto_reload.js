@@ -21,10 +21,10 @@ module.exports = function (grunt) {
       extensionDir: ''
     });
 
-    var reloadHTML = options.extensionDir + '/reload.html';
-    var reloadJs = options.extensionDir + '/reload.js';
+    var reloadHTML = path.normalize(options.extensionDir + '/reload.html');
+    var reloadJs = path.normalize(options.extensionDir + '/reload.js');
     if (!grunt.file.exists(reloadJs)) {
-      var reloadJsSrc = grunt.template.process(grunt.file.read(path.resolve(__dirname, 'reload.js.tpl')), { data: { 'reloadFile': reloadHTML } } );
+      var reloadJsSrc = grunt.template.process(grunt.file.read(path.resolve(__dirname, 'reload.js.tpl')), { data: { 'reloadFile': path.basename(reloadHTML) } } );
       grunt.file.write(reloadJs, reloadJsSrc);
     }
     grunt.file.write(reloadHTML, new Date().getTime().toString());
