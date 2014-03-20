@@ -2,6 +2,10 @@
 
 > Pure Javascript solution for automatically reloading a Chrome extension.
 
+```
+WARNING: This solution will spike your processor so disable the extension when you have stopped development. Moreover, remove the reload.js reference on the manifest.json production version.
+```
+
 ## Getting Started
 This plugin requires Grunt.
 
