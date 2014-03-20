@@ -1,6 +1,6 @@
 {
   "name": "grunt-crx-auto-reload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure Javascript solution for automatically reloading a Chrome extension.",
   "homepage": "https://github.com/minimul/grunt-crx-auto-reload",
   "repository": "https://github.com/minimul/grunt-crx-auto-reload",
