@@ -57,7 +57,7 @@ grunt.initConfig({
 
     watch: {
         crx_auto_reload: {
-          files: ['app/scripts/{,*/}*.js', 'app/templates/{,*/}*.html'],
+          files: ['app/scripts/{,*/}*.js', 'app/manifest.json', 'app/templates/{,*/}*.html'],
           tasks: ['crx_auto_reload']
         }
     },
